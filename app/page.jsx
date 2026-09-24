@@ -13,33 +13,34 @@ const rating = "4.9";
 const reviewsCount = "47";
 
 const copy = {
-  kicker: "Centro de Quiromasaje en Santander",
+  kicker: "Tu clínica en Santander",
   clinicName: "Quirosan",
-  headlineTagline: "Quiromasaje y Masaje Deportivo en Santander",
+  headlineTagline: "Vuelve a sentirte bien. Sin prisas y a tu ritmo.",
   subtitle:
-    "Descarga muscular, alivio eficaz de contracturas y tratamientos corporales personalizados. Atención profesional sin esperas en el centro de Santander.",
-  headerCta: "Pedir Cita",
-  heroCta: "Pedir cita por WhatsApp",
-  servicesCta: "Ver todos los servicios",
-  contactCta: "Escribir por WhatsApp",
-  floatingCta: "Pedir Cita",
-  servicesTitle: "Nuestros Servicios",
+    "Sabemos lo frustrante que es convivir con tensión muscular o dolor. Aquí te escuchamos de verdad, evaluamos tu caso y usamos nuestras manos para que recuperes tu movilidad y bienestar.",
+  headerCta: "Hablemos",
+  heroCta: "Reserva tu sesión",
+  servicesCta: "Lo que hacemos",
+  contactCta: "Mándanos un WhatsApp",
+  floatingCta: "Pedir cita",
+  servicesTitle: "Cómo podemos ayudarte",
   servicesIntro:
-    "Tratamientos manuales y presoterapia adaptados a tus objetivos de recuperación, alivio o bienestar.",
-  aboutTitle: "¿Por qué elegir Quirosan?",
+    "No hay cuerpos iguales ni recetas mágicas. Elige el tratamiento que mejor encaje contigo o pregúntanos si no lo tienes claro.",
+  aboutTitle: "Nuestra filosofía",
   aboutIntro:
-    "Atención individualizada, técnicas manuales rigurosas y dedicación exclusiva en cada sesión.",
-  reviewsTitle: "Reseñas de nuestros clientes",
-  reviewsIntro: "Opiniones reales y verificadas en Google Maps de personas tratadas en Quirosan.",
-  contactTitle: "Ubicación y Horarios",
+    "Huimos de los tratamientos en cadena. Aquí el tiempo es tuyo, el trato es cercano y las manos son profesionales.",
+  reviewsTitle: "Lo que cuentan de nosotros",
+  reviewsIntro: "No queremos convencerte nosotros. Preferimos que lo hagan quienes ya han pasado por nuestra camilla.",
+  contactTitle: "Ven a vernos",
   contactIntro:
-    `Estamos en ${clinicData.address}. Llámanos o escríbenos directamente por WhatsApp para reservar tu sesión.`,
+    `Te esperamos en ${clinicData.address}. Escríbenos por WhatsApp sin ningún compromiso, solemos contestar súper rápido.`,
 };
 
 const navLinks = [
   { name: "Inicio", href: "#inicio" },
   { name: "Servicios", href: "#servicios" },
   { name: "¿Por qué Quirosan?", href: "#nosotros" },
+  { name: "Equipo", href: "#profesionales" },
   { name: "Opiniones", href: "#opiniones" },
   { name: "Contacto", href: "#contacto" },
 ];
@@ -47,68 +48,68 @@ const navLinks = [
 const services = [
   {
     id: "masaje-deportivo",
-    title: "Masaje deportivo",
+    title: "Deportivo y Descarga",
     icon: "sport",
-    desc: "Descarga muscular profunda, prevención de sobrecargas y aceleración de la recuperación para deportistas.",
+    desc: "Si entrenas duro, tu cuerpo necesita un respiro. Ideal para limpiar sobrecargas, evitar roturas y rendir mejor en tu próximo entreno.",
   },
   {
     id: "masaje-descontracturante",
-    title: "Masaje descontracturante",
+    title: "Alivio Descontracturante",
     icon: "hands",
-    desc: "Técnicas manuales para disolver contracturas, nudos y aliviar la tensión acumulada en espalda y cuello.",
+    desc: "Nos centramos en disolver esos nudos y la tensión acumulada en el cuello o la espalda. Perfecto para quienes pasan horas frente al ordenador.",
   },
   {
     id: "masaje-relajante",
-    title: "Masaje relajante",
+    title: "Pausa y Relax",
     icon: "calm",
-    desc: "Maniobras suaves y fluidas para reducir el estrés, calmar el sistema nervioso y desconectar cuerpo y mente.",
+    desc: "A veces simplemente necesitas desconectar. Movimientos suaves y pausados para calmar tu sistema nervioso y bajar las revoluciones.",
   },
   {
     id: "masaje-craneal",
-    title: "Masaje craneal",
+    title: "Alivio Craneal",
     icon: "head",
-    desc: "Terapia focalizada en cuello, sienes y cráneo para aliviar cefaleas, migrañas y sobrecarga por bruxismo.",
+    desc: "Si aprietas los dientes por la noche (bruxismo) o sufres dolores de cabeza constantes, liberar esta zona te dará la vida.",
   },
   {
     id: "masaje-anticelulitico",
-    title: "Masaje anticelulítico",
+    title: "Masaje Anticelulítico",
     icon: "droplet",
-    desc: "Masaje manual enérgico para movilizar el tejido adiposo, activar la circulación y mejorar la firmeza de la piel.",
+    desc: "Trabajo manual intenso enfocado en movilizar la grasa localizada y reactivar la circulación. Duele un poquito, pero funciona.",
   },
   {
     id: "reductor-abdomen",
-    title: "Reductor de abdomen",
+    title: "Reductor Abdominal",
     icon: "body",
-    desc: "Maniobras específicas para reducir volumen, drenar la retención de líquidos y estilizar la zona abdominal.",
+    desc: "Maniobras específicas para ayudar a tu cuerpo a drenar líquidos, reducir hinchazón y estilizar la zona del vientre.",
   },
   {
     id: "presoterapia",
     title: "Presoterapia",
     icon: "wave",
-    desc: "Compresión neumática secuencial para activar el retorno linfático y aliviar la sensación de piernas pesadas.",
+    desc: "Un masaje mediante aire a presión. Te metes en unas 'botas' gigantes y sales con las piernas ligeras como plumas.",
   },
 ];
 
 const reasons = [
   {
     num: "01",
-    title: "Experiencia en quiromasaje y deporte",
-    desc: "Dominamos las técnicas manuales más efectivas para cada disciplina deportiva y dolencia muscular cotidiana.",
+    title: "Sin prisas",
+    desc: "Olvídate de las sesiones de 15 minutos donde apenas te miran. Aquí reservamos el tiempo necesario para escucharte y tratarte en condiciones.",
   },
   {
     num: "02",
-    title: "Sesiones exclusivas 1 a 1",
-    desc: "Dedicación íntegra y personalizada durante todo tu tiempo de consulta. Sin prisas ni salas compartidas.",
+    title: "Trato 1 a 1 real",
+    desc: "Estaremos contigo durante toda la consulta. No hay máquinas que te dejen solo en una sala, todo el trabajo es 100% manual y enfocado en ti.",
   },
   {
     num: "03",
-    title: "Gama completa de masajes",
-    desc: "Desde la descarga deportiva hasta el bienestar relajante y los tratamientos corporales reductores y presoterapia.",
+    title: "Honestidad ante todo",
+    desc: "Si vemos que tu problema requiere de un médico u otro especialista, te lo diremos claro. No te daremos sesiones que no necesitas.",
   },
   {
     num: "04",
-    title: "Flexibilidad y trato cercano",
-    desc: "Citas en el mismo día cuando hay disponibilidad y resolución directa de dudas por WhatsApp.",
+    title: "Flexibilidad por WhatsApp",
+    desc: "Sabemos que el día a día es un caos. Mándanos un mensaje y buscamos un hueco que te encaje. Cero complicaciones.",
   },
 ];
 
@@ -389,30 +390,54 @@ export default function Home() {
 
           {/* MOBILE NAV DROPDOWN */}
           {isMenuOpen && (
-            <div className="border-t border-white/10 bg-slate-950/95 px-4 py-3 md:hidden">
-              <nav className="flex flex-col gap-2">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="rounded-md px-3 py-2 text-sm font-medium text-white/90 hover:bg-white/10 hover:text-white"
-                  >
-                    {link.name}
-                  </a>
-                ))}
-                <div className="mt-2 border-t border-white/10 pt-2">
-                  <a
-                    href={defaultWhatsAppUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-teal-600 py-2.5 text-sm font-semibold text-white"
-                  >
-                    <WhatsAppIcon className="h-4 w-4" />
-                    {copy.heroCta}
-                  </a>
-                </div>
-              </nav>
+            <div className="fixed inset-0 z-[100] flex flex-col bg-teal-800/80 backdrop-blur-md md:hidden animate-in fade-in duration-300">
+              <div className="flex items-center justify-between px-4 py-5 sm:px-6">
+                <a href="#inicio" onClick={() => setIsMenuOpen(false)} className="flex flex-col text-left group">
+                  <span className="text-2xl font-black text-white tracking-tight leading-none group-hover:text-teal-300 transition">
+                    Quirosan
+                  </span>
+                  <span className="mt-1 text-xs font-medium text-teal-300 tracking-wide">
+                    Quiromasaje y masaje deportivo
+                  </span>
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="rounded-lg border border-white/20 p-2 text-white hover:bg-white/10"
+                  aria-label="Cerrar menú"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5 stroke-current stroke-2 fill-none">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="flex flex-1 flex-col items-center justify-center pb-24">
+                <nav className="flex flex-col items-center gap-8 text-center">
+                  {navLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-3xl font-black text-white hover:text-teal-300 transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                  <div className="mt-8">
+                    <a
+                      href={defaultWhatsAppUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-base font-bold text-teal-800 shadow-lg transition hover:bg-teal-50"
+                    >
+                      <WhatsAppIcon className="h-5 w-5 text-teal-600" />
+                      {copy.heroCta}
+                    </a>
+                  </div>
+                </nav>
+              </div>
             </div>
           )}
         </header>
@@ -430,12 +455,12 @@ export default function Home() {
             {copy.subtitle}
           </p>
 
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3 sm:flex-col">
+          <div className="mt-9 flex w-full max-w-xs flex-col gap-3 sm:max-w-none sm:flex-row sm:justify-center">
             <a
               href={defaultWhatsAppUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700 active:scale-95 sm:px-7 sm:py-3.5 sm:text-base"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700 active:scale-95 sm:w-auto sm:px-7 sm:py-3.5 sm:text-base"
             >
               <WhatsAppIcon className="h-4 w-4 sm:h-5 sm:w-5" />
               <span>{copy.heroCta}</span>
@@ -443,7 +468,7 @@ export default function Home() {
 
             <a
               href="#servicios"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-xs transition hover:bg-white/20 sm:px-6 sm:py-3.5 sm:text-base"
+              className="flex w-full items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-xs transition hover:bg-white/20 sm:w-auto sm:px-6 sm:py-3.5 sm:text-base"
             >
               <span>{copy.servicesCta}</span>
             </a>
@@ -479,37 +504,37 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-4 sm:gap-6 lg:grid-cols-3">
             {services.map((service, index) => {
               const isLastOdd = services.length % 2 !== 0 && index === services.length - 1;
               return (
                 <a
                   key={service.id}
-                  href={getWhatsAppUrl(`Hola, me gustaría pedir cita o consultar sobre ${service.title} en Quirosan.`)}
+                  href={getWhatsAppUrl(`Hola, me gustaría consultar sobre ${service.title}.`)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`group flex flex-col items-center rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-lg hover:-translate-y-1.5${isLastOdd ? " col-span-2 lg:col-span-1 lg:col-start-2" : ""
+                  className={`group flex flex-col items-start rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm transition-all duration-300 hover:border-teal-400 hover:shadow-xl hover:-translate-y-2${isLastOdd ? " col-span-1 sm:col-span-2 lg:col-span-1 lg:col-start-2" : ""
                     }`}
                 >
                   {/* Icon bubble */}
-                  <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-teal-50 ring-1 ring-teal-100 transition-all group-hover:bg-teal-100 group-hover:ring-teal-200">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal-50 ring-1 ring-teal-100 transition-all duration-300 group-hover:bg-teal-100 group-hover:ring-teal-200 group-hover:-rotate-6">
                     <ServiceIcon type={service.icon} />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-center text-sm font-bold leading-snug text-teal-700 transition group-hover:text-teal-800 sm:text-base">
+                  <h3 className="text-left text-base font-bold leading-snug text-slate-900 transition group-hover:text-teal-700 sm:text-lg">
                     {service.title}
                   </h3>
 
                   {/* Desc */}
-                  <p className="mt-2 text-center text-xs leading-relaxed text-slate-500 sm:text-sm">
+                  <p className="mt-3 text-left text-sm leading-relaxed text-slate-500">
                     {service.desc}
                   </p>
 
                   {/* CTA */}
-                  <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-teal-600 transition group-hover:text-teal-800">
-                    <span>Pedir cita</span>
-                    <svg viewBox="0 0 20 20" className="h-3.5 w-3.5 fill-current transition-transform group-hover:translate-x-0.5">
+                  <div className="mt-auto pt-6 flex items-center gap-1 text-sm font-bold text-teal-600 transition-all duration-300 group-hover:text-teal-800">
+                    <span>Preguntar por esto</span>
+                    <svg viewBox="0 0 20 20" className="h-4 w-4 fill-current transition-transform duration-300 group-hover:translate-x-1.5">
                       <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                     </svg>
                   </div>
@@ -538,26 +563,29 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {reasons.map((r) => (
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {reasons.map((r, i) => (
               <div
                 key={r.num}
-                className="rounded-xl border border-teal-600/40 bg-white/10 backdrop-blur-sm p-6"
+                className={`rounded-[2rem] border border-teal-600/30 bg-white/5 backdrop-blur-md p-8 sm:p-10 transition hover:bg-white/10 ${i === 0 || i === 3 ? "lg:col-span-2" : ""
+                  }`}
               >
-                <span className="inline-block text-xl font-bold text-teal-300">
-                  {r.num}
-                </span>
-                <h3 className="mt-2 text-base font-bold text-white">
-                  {r.title}
-                </h3>
-                <p className="mt-2 text-sm text-teal-100/80 leading-relaxed">
+                <div className="flex items-center gap-4 mb-4">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-600/20 text-lg font-black text-teal-300">
+                    {r.num}
+                  </span>
+                  <h3 className="text-xl font-bold text-white leading-tight">
+                    {r.title}
+                  </h3>
+                </div>
+                <p className="text-base text-teal-100/90 leading-relaxed font-medium">
                   {r.desc}
                 </p>
               </div>
             ))}
           </div>
         </div>
-        {/* WAVE: nosotros → opiniones */}
+        {/* WAVE: nosotros → profesionales */}
         <div className="relative w-full overflow-hidden leading-none -mb-[1px]">
           <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="block w-full h-10 sm:h-14 lg:h-20 text-slate-50">
             <path d="M0,60 C480,0 960,100 1440,30 L1440,100 L0,100 Z" fill="currentColor" />
@@ -565,8 +593,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. GOOGLE REVIEWS CAROUSEL */}
-      <section id="opiniones" className="bg-slate-50 pb-0 pt-4 sm:pt-8">
+      {/* 4. PROFESIONALES */}
+      <section id="profesionales" className="bg-slate-50 pb-16 pt-12 sm:pt-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
+            {/* Foto */}
+            <div className="w-full md:w-5/12">
+              <div className="relative aspect-[4/5] w-full max-w-sm mx-auto overflow-hidden rounded-3xl shadow-xl border-4 border-white">
+                <img
+                  src="images/fisioa.webp"
+                  alt="tus muer "
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                />
+              </div>
+            </div>
+
+            {/* Textos */}
+            <div className="w-full md:w-7/12 flex flex-col justify-center text-left">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="h-px w-8 bg-teal-600"></div>
+                <span className="text-xs font-bold uppercase tracking-wider text-teal-600">Nuestro Equipo</span>
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Conoce a tu terapeuta
+              </h2>
+              <div className="mt-6 flex flex-col gap-4 text-slate-600 text-base leading-relaxed sm:text-lg">
+                <p>
+                  <strong className="text-slate-800">Nombre:</strong> Carlos Mendoza <span className="text-sm text-slate-400 font-normal ml-1">34 años</span>
+                </p>
+                <p>
+                  <strong className="text-slate-800">Experiencia:</strong> Más de 10 años en quiromasaje y rehabilitación deportiva. He trabajado con atletas de alto rendimiento, opositores y personas con dolencias musculares por estrés o malas posturas.
+                </p>
+                <p>
+                  <strong className="text-slate-800">Especialidades:</strong> Masaje descontracturante profundo, terapia miofascial, y prevención de lesiones.
+                </p>
+                <div className="mt-4 border-l-4 border-teal-500 pl-4 italic text-slate-500 bg-teal-50/50 py-3 pr-3 rounded-r-lg">
+                  &ldquo;Mi objetivo es entender el origen de tu molestia, no solo tratar el síntoma. Cada sesión está diseñada a medida para devolverte la movilidad y el bienestar que mereces.&rdquo;
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. GOOGLE REVIEWS CAROUSEL */}
+      <section id="opiniones" className="bg-slate-50 pb-0 pt-16 sm:pt-24 border-t border-slate-200/60 mt-4 sm:mt-8">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           {/* HEADER */}
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">

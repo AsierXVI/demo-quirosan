@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import { clinicData } from "@/data/clinic";
 import "./globals.css";
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
 });
@@ -18,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es">
-      <body className={`${inter.className} bg-slate-50 text-slate-800 antialiased`}>
+    <html lang="es" className="scroll-smooth">
+      <body className={`${outfit.className} bg-slate-50 text-slate-800 antialiased`}>
         {children}
       </body>
     </html>
